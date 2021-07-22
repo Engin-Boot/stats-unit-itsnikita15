@@ -23,8 +23,8 @@ namespace Statistics
             if(numbers.Count == 0)
             {
                 Results.average = Double.NaN;
-                Results.max = Double.Nan;
-                Results.min = Double.min;
+                Results.max = Double.NaN;
+                Results.min = Double.NaN;
                 return Results;
             }
 
