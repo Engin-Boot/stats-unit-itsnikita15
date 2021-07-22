@@ -11,7 +11,7 @@ namespace Statistics
 		public StatsAlerter(float maxThreshold, IAlerter[] alerters)
 		{
 			this.maxThreshold = maxThreshold;
-			this alerters = alerters;
+			this.alerters = alerters;
 		}
 
 		public void checkAndAlert(List<float> numbers)
@@ -24,6 +24,7 @@ namespace Statistics
                     {
 						alerters[j].alert();
                     }
+					break;
                 }
             }
         }
